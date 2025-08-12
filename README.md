@@ -4,7 +4,7 @@ This repository documents a comprehensive, hands-on project designed to simulate
 
 This project was built to showcase the foundational knowledge and proactive mindset required for an undergraduate or entry-level SOC Analyst role.
 
-# 🚀 Key Features
+# Key Features
 Centralized SIEM: A fully deployed ELK (Elasticsearch, Logstash, Kibana) Stack on Kali Linux to ingest, parse, and visualize security data.
 
 Multi-Source Log Ingestion: Integration of alerts from industry-standard tools:
@@ -21,12 +21,12 @@ Threat Hunting Queries: A repository of KQL queries mapped to the MITRE ATT&CK f
 
 Incident Response Playbooks: Documented response procedures for common security incidents.
 
-📈 Live SIEM Dashboard: Network Detection Overview
+# Live SIEM Dashboard: Network Detection Overview
 The heart of this project is the central Kibana dashboard, which correlates data from all security tools into a single pane of glass. This provides a unified view for monitoring and detecting potentially malicious activity across the network.
 
 A snapshot of the live dashboard after simulating several attacks, showing alerts from Suricata, Snort, and Cowrie.
 
-🛡️ Simulated Detections & Evidence
+# Simulated Detections & Evidence
 To validate the effectiveness of the SIEM, several attacks were simulated. The system successfully detected and logged this activity, and the evidence is captured below.
 
 1. Suricata: Port Scan Detection
@@ -46,7 +46,7 @@ A breakdown of the most frequently used usernames in SSH brute-force attempts.
 
 A visualization of the most common passwords attempted against the honeypot.
 
-📂 Repository Structure
+# Repository Structure
 This repository is organized to clearly present all project artifacts:
 
 .
@@ -56,7 +56,7 @@ This repository is organized to clearly present all project artifacts:
 ├── python_tools/          # Automation scripts for IOC enrichment, etc.
 └── README.md              # You are here!
 
-🛠️ Technologies Used
+# Technologies Used
 SIEM: ELK Stack (Elasticsearch, Kibana, Filebeat) v8.x
 
 Host: Kali Linux
