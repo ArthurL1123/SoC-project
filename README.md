@@ -4,7 +4,7 @@ This repository documents a comprehensive, hands-on project designed to simulate
 
 This project was built to showcase the foundational knowledge and proactive mindset required for an undergraduate or entry-level SOC Analyst role.
 
-🚀 Key Features
+#🚀 Key Features
 Centralized SIEM: A fully deployed ELK (Elasticsearch, Logstash, Kibana) Stack on Kali Linux to ingest, parse, and visualize security data.
 
 Multi-Source Log Ingestion: Integration of alerts from industry-standard tools:
