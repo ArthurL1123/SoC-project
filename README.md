@@ -46,15 +46,6 @@ A breakdown of the most frequently used usernames in SSH brute-force attempts.
 
 A visualization of the most common passwords attempted against the honeypot.
 
-# Repository Structure
-This repository is organized to clearly present all project artifacts:
-
-.
-├── evidence/              # Screenshots and data exports from detections
-├── playbooks/             # Incident Response playbooks in Markdown
-├── queries/               # KQL threat hunting queries
-├── python_tools/          # Automation scripts for IOC enrichment, etc.
-└── README.md              # You are here!
 
 # Technologies Used
 SIEM: ELK Stack (Elasticsearch, Kibana, Filebeat) v8.x
