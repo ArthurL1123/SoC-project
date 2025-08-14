@@ -1,0 +1,2 @@
+data_stream.dataset:"suricata.eve" and suricata.eve.alert.signature:"ET SCAN Nmap"
+

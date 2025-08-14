@@ -1,0 +1,1 @@
+event.provider:"Microsoft-Windows-Sysmon" and event.id:1 and process.name:"powershell.exe" and process.command_line:(*-e* or *-en* or *-enc* or *-enco* or *-encod* or *-encode* or *-encoded*)
