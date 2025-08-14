@@ -1,1 +1,0 @@
-(data_stream.dataset:"suricata.eve" and suricata.eve.alert.signature:*SCAN*) or (log_type:"cowrie" and eventid:"cowrie.login.failed")

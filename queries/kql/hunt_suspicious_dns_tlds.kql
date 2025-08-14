@@ -1,1 +1,0 @@
-data_stream.dataset:"suricata.eve" and suricata.eve.event_type:"dns" and suricata.eve.dns.rrname:(*.xyz or *.top or *.su or *.online)
