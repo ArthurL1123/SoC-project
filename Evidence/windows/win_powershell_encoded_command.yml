@@ -1,0 +1,28 @@
+title: PowerShell Encoded Command
+id: 1000001
+status: stable
+description: Detects the use of the -EncodedCommand flag in PowerShell, a technique often used by attackers to obfuscate malicious commands.
+references:
+    - https://attack.mitre.org/techniques/T1027/
+author: ArthurL1123
+date: 2025/8/10
+logsource:
+    product: windows
+    service: sysmon
+detection:
+    selection:
+        EventID: 1
+        Image|endswith: '\powershell.exe'
+        CommandLine|contains: 
+            - ' -e '
+            - ' -en '
+            - ' -enc '
+            - ' -enco'
+            - ' -encod'
+            - ' -encode'
+            - ' -encoded'
+            - ' -EncodedCommand '
+    condition: selection
+falsepositives:
+    - Some legitimate administration scripts may use encoded commands. Investigation is required.
+level: high

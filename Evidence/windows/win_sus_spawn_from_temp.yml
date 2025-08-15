@@ -1,0 +1,27 @@
+title: Process Spawn from Temp Directory
+id: 1000002
+status: stable
+description: Detects a process being created from a common temporary directory, which is a behavior often associated with malware droppers.
+references:
+    - https://attack.mitre.org/techniques/T1059/001/
+author: ArthurL1123
+date: 2025/8/10
+logsource:
+    product: windows
+    service: sysmon
+detection:
+    selection:
+        EventID: 1
+        Image|contains:
+            - '\AppData\Local\Temp\'
+            - '\Windows\Temp\'
+    filter:
+        # Exclude common legitimate installers and updaters
+        Image|endswith:
+            - '\msiexec.exe'
+            - '\setup.exe'
+            - '\updater.exe'
+    condition: selection and not filter
+falsepositives:
+    - Legitimate software installers or updaters.
+level: medium
